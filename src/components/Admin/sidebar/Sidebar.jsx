@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import DashboardIcon from "@mui/icons-material/Dashboard";
 import PersonOutlineIcon from "@mui/icons-material/PersonOutline";
 import DoDisturbIcon from '@mui/icons-material/DoDisturb';
@@ -5,7 +7,8 @@ import HandshakeIcon from '@mui/icons-material/Handshake';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import HomeIcon from '@mui/icons-material/Home';
-import { Link } from "react-router-dom";
+
+import { FaBook } from 'react-icons/fa';
 
 import "./sidebar.scss";
 
@@ -18,7 +21,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="top">
         <Link to="/admin" style={{ textDecoration: "none" }} onClick={scrollToUp}>
-          <span className="logo">Admin</span>
+          <span className="logo"> <FaBook/> Admin</span>
         </Link>
       </div>
       
