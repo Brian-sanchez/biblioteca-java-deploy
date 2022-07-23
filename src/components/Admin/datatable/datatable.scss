@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+.swal-title {
+  font-size: 35px;
+}
+
+.swal-text {
+  font-size: 25px;
+}
+
+.swal2-styled.swal2-confirm {
+  font-size: 1.3rem;
+  background-color: black;
+}
+
+.swal2-styled.swal2-confirm:focus {
+  background-color: black;
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+  width: 30rem;
+}
+
+.datatable {
+  height: 619px;
+  padding: 20px;
+  margin-bottom: 5rem;
+
+  .css-1jbbcbn-MuiDataGrid-columnHeaderTitle {
+    font-size: 13px;
+  }
+
+  .css-r11z79-MuiDataGrid-root .MuiDataGrid-cellContent {
+    font-size: 13px;
+  }
+
+  .css-levciy-MuiTablePagination-displayedRows {
+    font-size: 13px;
+  }
+
+  .css-de9k3v-MuiDataGrid-selectedRowCount {
+    font-size: 13px;
+  }
+
+  .datatableTitle {
+    margin-bottom: 2rem;
+
+    .link {
+      text-decoration: none;
+      color: green;
+      font-size: 16px;
+      font-weight: 400;
+      border: 1px solid green;
+      padding: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .link:hover {
+      background-color: green;
+      color: white;
+    }
+  }
+
+  .cellWithImg {
+    align-items: center;
+
+    .cellImg {
+      height: 6rem;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+
+    &.active {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+
+    &.pending {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+
+    &.passive {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      font-size: 14px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }
+
+    .viewButton:hover {
+      background-color: darkblue;
+      color: white;
+    }
+    
+    .deleteButton {
+      font-size: 14px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: crimson;
+      border: 1px dotted rgba(220, 20, 60, 0.6);
+      cursor: pointer;
+    }
+
+    .deleteButton:hover {
+      background-color: crimson;
+      color: white;
+    }
+
+    .editButton {
+      font-size: 14px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(230, 157, 0);
+      border: 1px dotted rgb(230, 157, 0);
+      cursor: pointer;
+
+      .link {
+        color: rgb(230, 157, 0);
+      }
+    }
+
+    .editButton:hover {
+      background-color: rgb(230, 157, 0);
+      color: white;
+
+      .link {
+        color: white;
+      }
+    }
+
+    .devolverButton {
+      font-size: 14px;
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: rgb(97, 20, 220);
+      border: 1px dotted rgb(97, 20, 220);
+      cursor: pointer;
+    }
+
+    .devolverButton:hover {
+      background-color: rgb(97, 20, 220);
+      color: white;
+    }
+  }
+}

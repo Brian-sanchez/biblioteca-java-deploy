@@ -1,0 +1,195 @@
+.swal-title {
+  font-size: 35px;
+}
+
+.swal-text {
+  font-size: 25px;
+}
+
+.swal2-styled.swal2-confirm {
+  font-size: 1.3rem;
+  background-color: black;
+}
+
+.swal2-styled.swal2-confirm:focus {
+  background-color: black;
+}
+
+.swal2-container.swal2-center > .swal2-popup {
+  width: 30rem;
+}
+
+.new {
+  width: 100%;
+  display: flex;
+  
+  .newContainer {
+    flex: 6;
+
+    .top, .bottom {
+      padding: 10px;
+      margin: 20px;
+
+
+      h1 {
+        color: black;
+        font-size: 27px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+      }
+
+      form {
+        justify-content: center;
+        text-align: center;
+      
+        .formInput {
+          width: 40%;
+          margin: auto;
+          margin-bottom: 4rem;
+          
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+
+            .icon {
+              cursor: pointer;
+            }
+          }
+
+          .errors {
+            white-space: nowrap;
+            color: red;
+            font-size: 14px;
+            margin-top: 4px;
+          }
+
+          input {
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid gray;
+          }
+
+          select {
+            width: 40rem;
+            padding: 5px;
+            -webkit-appearance: none;
+            border-bottom: 1px solid gray;
+          }
+        }
+
+        button {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+
+        button:hover {
+          background-color: gray;
+        }
+      }
+    }
+  }
+}
+
+.new {
+  width: 100%;
+  display: flex;
+  
+  .newContainer {
+    flex: 6;
+
+    .top, .libro-form {
+      padding: 10px;
+      margin: 20px;
+      display: flex;
+
+      .image {
+        margin-left: 10rem;
+
+        .inputImage {
+          max-height: 50rem;
+        }
+
+        .defaultImage {
+          max-height: 50rem;
+        }
+      }
+
+      h1 {
+        color: black;
+        font-size: 27px;
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+      }
+
+      form {
+        justify-content: center;
+        text-align: center;
+      
+        .formInput {
+          width: 40%;
+          margin: auto;
+          margin-bottom: 4rem;
+          
+          label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 15px;
+            white-space: nowrap;
+
+            .icon {
+              cursor: pointer;
+            }
+          }
+
+          .errors {
+            white-space: nowrap;
+            color: red;
+            font-size: 14px;
+            margin-top: 4px;
+          }
+
+          input {
+            width: 40rem;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid gray;
+          }
+
+          select {
+            width: 40rem;
+            padding: 5px;
+            -webkit-appearance: none;
+            border-bottom: 1px solid gray;
+          }
+        }
+
+        button {
+          width: 150px;
+          padding: 10px;
+          border: none;
+          background-color: black;
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+
+        button:hover {
+          background-color: gray;
+        }
+      }
+    }
+  }
+}
