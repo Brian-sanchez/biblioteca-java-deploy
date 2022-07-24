@@ -17,7 +17,7 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaBriefcase } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 
-import { getAllBooks } from "../../Redux/actions/index";
+import { getAllBooks, getAllCopias, getAllLectores, getAllMultas, getAllPrestamos } from "../../Redux/actions/index";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -49,6 +49,10 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(getAllBooks());
+        dispatch(getAllCopias());
+        dispatch(getAllLectores());
+        dispatch(getAllPrestamos());
+        dispatch(getAllMultas());
     }, [dispatch]);
 
   return (
