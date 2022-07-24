@@ -17,6 +17,9 @@ import { FaLinkedin } from 'react-icons/fa';
 import { FaBriefcase } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
 
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
+
 import { getAllBooks, getAllCopias, getAllLectores, getAllMultas, getAllPrestamos } from "../../Redux/actions/index";
 
 import 'swiper/css';
@@ -30,6 +33,27 @@ const Home = () => {
     const books = useSelector((state) => state.allBooks);
     const [isClick, setIsClick] = useState(false);
     const [isClickLend, setIsClickLend] = useState(false);
+
+    const loadingSliders = [
+        {
+            id: 1
+        },
+        {
+            id: 2
+        },
+        {
+            id: 3
+        },
+        {
+            id: 4
+        },
+        {
+            id: 5
+        },
+        {
+            id: 6
+        }
+    ]
 
     const handleOnClick = () => {
         setIsClick(!isClick);
@@ -211,7 +235,16 @@ const Home = () => {
                     }}
                     >
                         {
-                            books && books.map(e => (
+                            !books.length ?
+                            loadingSliders.map(l => (
+                                <SwiperSlide key={l.id}>
+                                    <div className='swiper-slide box'>
+                                        <Skeleton className='skeleton-book'/>
+                                    </div>
+                                </SwiperSlide>
+                            ))
+                            :
+                            books.map(e => (
                                 <SwiperSlide key={e.id}>
                                     <div className='swiper-slide box'>
                                         <div className="icons">

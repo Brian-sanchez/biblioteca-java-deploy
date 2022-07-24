@@ -19,6 +19,8 @@ import FormEditLibro from "./components/Admin/pages/forms/edit/FormEditLibro";
 import FormEditCopia from "./components/Admin/pages/forms/edit/FormEditCopia";
 import FormEditPrestamo from "./components/Admin/pages/forms/edit/FormEditPrestamo";
 
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+
 import './App.css';
 
 function App() {

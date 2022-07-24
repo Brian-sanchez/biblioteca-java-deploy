@@ -421,6 +421,12 @@ section {
     text-align: center;
 }
 
+.our-books .our-books-slider .box .skeleton-book {
+    width: 17rem;
+    height: 24rem;
+    margin: 1rem;
+}
+
 .our-books .our-books-slider .box .image {
     padding: 1rem;
     padding-bottom: 2.5rem;
